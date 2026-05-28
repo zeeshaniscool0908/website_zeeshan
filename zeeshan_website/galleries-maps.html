@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire Maps — Syed Zeeshan Ahmad</title>
+  <meta name="description" content="Maps of the Holy Empire of Akhribah — a fictional world-building project.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav__brand" href="index.html">Syed <span>Zeeshan</span> Ahmad</a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="galleries.html">Galleries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__right">
+    <button class="nav__theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="label"><a href="galleries.html" style="color:var(--gold);">← Galleries</a> · Maps</span>
+  <h1>Holy Empire of <em class="red">Akhribah</em></h1>
+  <p>Maps and cartography from my long-running world-building project.</p>
+</header>
+
+<section class="section">
+
+  <!-- H.E.A. Description -->
+  <div class="card fade-in" style="margin-bottom:3rem; background:linear-gradient(135deg,rgba(139,0,0,0.07),rgba(201,168,76,0.04)); border-color:var(--border-hard);">
+    <div style="display:flex; align-items:flex-start; gap:2rem; flex-wrap:wrap;">
+      <div style="font-size:4rem; flex-shrink:0;">🏛️</div>
+      <div>
+        <span class="label" style="display:block; margin-bottom:0.5rem;">World-Building Project</span>
+        <h2 style="font-size:1.5rem; margin-bottom:1rem;">The Holy Empire of Akhribah</h2>
+        <p style="color:var(--text-muted); line-height:1.8; font-size:1rem;">
+          The H.E.A. is my most involved creative project — a fictional Islamic empire I've been constructing for years.
+          It has its own constructed language (<strong style="color:var(--text);">Akhribz</strong>), complete cartography, a detailed system of government,
+          an Islamic-inspired legal framework (sharia-based jurisprudence), national flags, cultural norms, and a rich history.
+          It's a place where my love of linguistics, history, Islamic studies, and cartography converge into something that's entirely my own.
+        </p>
+        <div style="margin-top:1.2rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+          <span class="learning-pill">🌐 Language: Akhribz</span>
+          <span class="learning-pill">🗺️ Cartography</span>
+          <span class="learning-pill">⚖️ Islamic Law</span>
+          <span class="learning-pill">🏛️ Government</span>
+          <span class="learning-pill">🚩 Flags & Heraldry</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header fade-in">
+    <span class="label">Cartography</span>
+    <h2>Maps of Akhribah</h2>
+    <p>Geographic, political, and cultural maps of the empire. Click to expand.</p>
+  </div>
+
+  <div class="gallery-grid fade-in">
+    <div class="gallery-item" data-lightbox data-emoji="🗺️" data-caption="Political Overview — The Holy Empire of Akhribah">
+      🗺️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Political Map</span>
+        <span class="gallery-item__sub">Full Empire Overview</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="⛰️" data-caption="Topographic Map — Mountains and Terrain of Akhribah">
+      ⛰️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Topographic</span>
+        <span class="gallery-item__sub">Mountains & Terrain</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🏙️" data-caption="Capital City — Al-Akhrib, The Imperial Seat">
+      🏙️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Al-Akhrib</span>
+        <span class="gallery-item__sub">Capital City</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🌊" data-caption="Coastal Provinces — Western Maritime Territories">
+      🌊
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Coastal Provinces</span>
+        <span class="gallery-item__sub">Western Territories</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🚩" data-caption="Imperial Flag — Heraldry of the H.E.A.">
+      🚩
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Imperial Flag</span>
+        <span class="gallery-item__sub">H.E.A. Heraldry</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="📜" data-caption="Akhribz Script — The Constructed Language of the Empire">
+      📜
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Akhribz Script</span>
+        <span class="gallery-item__sub">Constructed Language</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog">
+  <button class="lightbox__close" id="lbClose">✕</button>
+  <div class="lightbox__inner">
+    <div class="lightbox__img" id="lbImg"></div>
+    <p class="lightbox__caption" id="lbCap"></p>
+  </div>
+</div>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

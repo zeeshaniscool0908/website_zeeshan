@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleries — Syed Zeeshan Ahmad</title>
+  <meta name="description" content="Visual galleries — 3D printing, empire maps, art, and achievements.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav__brand" href="index.html">Syed <span>Zeeshan</span> Ahmad</a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="galleries.html">Galleries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__right">
+    <button class="nav__theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="label">Visual Work</span>
+  <h1>My <em class="red">Galleries</em></h1>
+  <p>A visual record of what I create, build, and achieve.</p>
+</header>
+
+<section class="section">
+  <div class="gallery-cats" data-stagger>
+
+    <a class="gallery-cat" href="galleries-3d.html">
+      <div class="gallery-cat__bg">🖨️</div>
+      <span class="gallery-cat__arrow">↗</span>
+      <div class="gallery-cat__overlay">
+        <div class="gallery-cat__title">3D Printing</div>
+        <div class="gallery-cat__sub">Bambu Lab P1S · Models · Prototypes</div>
+      </div>
+    </a>
+
+    <a class="gallery-cat" href="galleries-maps.html">
+      <div class="gallery-cat__bg">🗺️</div>
+      <span class="gallery-cat__arrow">↗</span>
+      <div class="gallery-cat__overlay">
+        <div class="gallery-cat__title">Empire Maps</div>
+        <div class="gallery-cat__sub">H.E.A. · Akhribah · World-Building</div>
+      </div>
+    </a>
+
+    <a class="gallery-cat" href="galleries-art.html">
+      <div class="gallery-cat__bg">🖊️</div>
+      <span class="gallery-cat__arrow">↗</span>
+      <div class="gallery-cat__overlay">
+        <div class="gallery-cat__title">Art &amp; Calligraphy</div>
+        <div class="gallery-cat__sub">Calligraphy · Painting · Digital Art</div>
+      </div>
+    </a>
+
+    <a class="gallery-cat" href="galleries-achievements.html">
+      <div class="gallery-cat__bg">🏆</div>
+      <span class="gallery-cat__arrow">↗</span>
+      <div class="gallery-cat__overlay">
+        <div class="gallery-cat__title">Achievements</div>
+        <div class="gallery-cat__sub">Certificates · Awards · Milestones</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Preview grid -->
+  <div class="section-header fade-in" style="margin-top:5rem">
+    <span class="label">Preview</span>
+    <h2>Recent Work</h2>
+  </div>
+  <div class="gallery-grid fade-in">
+    <a class="gallery-item" href="galleries-3d.html" data-lightbox data-emoji="🖨️" data-caption="3D Print — Custom Model">
+      🖨️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">3D Printing</span>
+        <span class="gallery-item__sub">Bambu Lab P1S</span>
+      </div>
+    </a>
+    <a class="gallery-item" href="galleries-maps.html" data-lightbox data-emoji="🗺️" data-caption="H.E.A. Regional Map">
+      🗺️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Empire Map</span>
+        <span class="gallery-item__sub">Holy Empire of Akhribah</span>
+      </div>
+    </a>
+    <a class="gallery-item" href="galleries-art.html" data-lightbox data-emoji="🖊️" data-caption="Arabic Calligraphy Piece">
+      🖊️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Calligraphy</span>
+        <span class="gallery-item__sub">Arabic Script</span>
+      </div>
+    </a>
+    <a class="gallery-item" href="galleries-achievements.html" data-lightbox data-emoji="🏆" data-caption="Academic Achievement">
+      🏆
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Achievement</span>
+        <span class="gallery-item__sub">Stone Bridge HS</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog">
+  <button class="lightbox__close" id="lbClose">✕</button>
+  <div class="lightbox__inner">
+    <div class="lightbox__img" id="lbImg"></div>
+    <p class="lightbox__caption" id="lbCap"></p>
+  </div>
+</div>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

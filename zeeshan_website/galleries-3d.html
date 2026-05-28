@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Printing Gallery — Syed Zeeshan Ahmad</title>
+  <meta name="description" content="3D printing gallery — models and prints from my Bambu Lab P1S.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav__brand" href="index.html">Syed <span>Zeeshan</span> Ahmad</a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="galleries.html">Galleries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__right">
+    <button class="nav__theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="label"><a href="galleries.html" style="color:var(--gold);">← Galleries</a> · 3D Printing</span>
+  <h1>3D <em class="red">Printing</em></h1>
+  <p>Designs and prints from my Bambu Lab P1S. Click any image to expand.</p>
+</header>
+
+<section class="section">
+
+  <!-- Bambu card -->
+  <div class="card fade-in" style="display:flex; align-items:center; gap:2rem; margin-bottom:3rem; flex-wrap:wrap;">
+    <div style="font-size:4rem; flex-shrink:0;">🖨️</div>
+    <div>
+      <span class="label">My Machine</span>
+      <h3 style="margin:0.4rem 0;">Bambu Lab P1S</h3>
+      <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7;">
+        A high-performance enclosed FDM printer. I use it for custom models, prototypes, and creative builds.
+        The P1S handles multi-material prints and delivers precision that inspires increasingly complex designs.
+      </p>
+    </div>
+  </div>
+
+  <div class="section-header fade-in">
+    <span class="label">Gallery</span>
+    <h2>Prints &amp; Models</h2>
+  </div>
+
+  <div class="gallery-grid fade-in">
+    <div class="gallery-item" data-lightbox data-emoji="🏰" data-caption="Architectural Model — H.E.A. Fortress Design">
+      🏰
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Fortress Model</span>
+        <span class="gallery-item__sub">H.E.A. Architecture</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="⚙️" data-caption="Mechanical Gear Assembly — Custom Design">
+      ⚙️
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Gear Assembly</span>
+        <span class="gallery-item__sub">Mechanical Design</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🌙" data-caption="Crescent Moon Décor — Islamic Motif">
+      🌙
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Crescent Décor</span>
+        <span class="gallery-item__sub">Islamic Motif</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="📐" data-caption="Parametric Phone Stand — Functional Print">
+      📐
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Phone Stand</span>
+        <span class="gallery-item__sub">Functional Print</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🏺" data-caption="Decorative Vase — Geometric Pattern">
+      🏺
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Geometric Vase</span>
+        <span class="gallery-item__sub">Decorative</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-lightbox data-emoji="🔬" data-caption="Lab Tool Holder — Science Desk Organizer">
+      🔬
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__caption">Lab Organizer</span>
+        <span class="gallery-item__sub">Desk Tool</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog">
+  <button class="lightbox__close" id="lbClose">✕</button>
+  <div class="lightbox__inner">
+    <div class="lightbox__img" id="lbImg"></div>
+    <p class="lightbox__caption" id="lbCap"></p>
+  </div>
+</div>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

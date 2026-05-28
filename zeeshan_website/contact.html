@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Syed Zeeshan Ahmad</title>
+  <meta name="description" content="Reach out to Syed Zeeshan Ahmad.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav__brand" href="index.html">Syed <span>Zeeshan</span> Ahmad</a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="galleries.html">Galleries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__right">
+    <button class="nav__theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="label">Get in Touch</span>
+  <h1>Let's <em class="red">Connect</em></h1>
+  <p>Feel free to reach out. I'm always open to thoughtful conversations.</p>
+</header>
+
+<section class="section">
+  <div class="contact-layout">
+    <div class="fade-in" style="margin-bottom:2rem">
+      <p style="font-size:1.15rem; color:var(--text-muted); line-height:1.85; text-align:center;">
+        Whether you want to talk about pharmacology, history, world-building, 3D printing,
+        or just connect person-to-person — I'd love to hear from you.
+        My socials are being set up. Check back soon.
+      </p>
+    </div>
+
+    <div class="social-row fade-in">
+      <div class="social-icon" title="LinkedIn — Coming Soon">
+        <span>💼</span>
+        <span class="social-icon__label">LinkedIn</span>
+      </div>
+      <div class="social-icon" title="Instagram — Coming Soon">
+        <span>📷</span>
+        <span class="social-icon__label">Instagram</span>
+      </div>
+      <div class="social-icon" title="Twitter / X — Coming Soon">
+        <span>🐦</span>
+        <span class="social-icon__label">Twitter</span>
+      </div>
+      <div class="social-icon" title="GitHub — Coming Soon">
+        <span>💻</span>
+        <span class="social-icon__label">GitHub</span>
+      </div>
+      <div class="social-icon" title="Email — Coming Soon">
+        <span>✉️</span>
+        <span class="social-icon__label">Email</span>
+      </div>
+    </div>
+
+    <p class="fade-in" style="text-align:center; margin-top:2rem; font-family:var(--ff-tech); font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-dim);">
+      Social links coming soon
+    </p>
+  </div>
+
+  <!-- Info cards -->
+  <div class="contact-info-cards fade-in" style="max-width:900px; margin:4rem auto 0;">
+    <div class="contact-info-card">
+      <div class="contact-info-card__icon">🎓</div>
+      <h3 class="contact-info-card__title">Academic</h3>
+      <p class="contact-info-card__desc">Penn State University Park, Class of 2030. Pharmacology major with research interests in rare genetic disorders.</p>
+    </div>
+    <div class="contact-info-card">
+      <div class="contact-info-card__icon">📍</div>
+      <h3 class="contact-info-card__title">Based In</h3>
+      <p class="contact-info-card__desc">Ashburn, Virginia. Loudoun County raised. Currently in State College, PA during the academic year.</p>
+    </div>
+    <div class="contact-info-card">
+      <div class="contact-info-card__icon">🤝</div>
+      <h3 class="contact-info-card__title">Open To</h3>
+      <p class="contact-info-card__desc">Thoughtful conversations, collaborations on creative projects, and connections with people who share curiosity and drive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog">
+  <button class="lightbox__close" id="lbClose">✕</button>
+  <div class="lightbox__inner">
+    <div class="lightbox__img" id="lbImg"></div>
+    <p class="lightbox__caption" id="lbCap"></p>
+  </div>
+</div>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
